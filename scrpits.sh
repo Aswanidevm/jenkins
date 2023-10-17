@@ -3,5 +3,10 @@
 name=$1
 lastname=$2
 Age=$3
+show=$4
 
-echo "hi ${name} ${lastname} ur age ${Age} as of $(date)"
+if [ "show" = "true"]; then
+ echo "hi ${name} ${lastname} ur age ${Age} as of $(date)"
+else
+ echo " mark show option"
+fi
